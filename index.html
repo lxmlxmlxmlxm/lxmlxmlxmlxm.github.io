@@ -1,68 +1,183 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Boids</title>
-        <meta name="viewport" content="width=device-width">
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100|Open+Sans:300' rel='stylesheet' type='text/css'>
-        <style type="text/css">
-          html, body {
-            margin:0;
-            padding:0;
-            font-family:'Open Sans', Helvetica, Arial, sans-serif;
-            color:#543D5E;
-            color:rgba(84,61,94,0.75);
-            background-color:#FFF1EB;
-          }
-          #title {
-            color:#543D5E;
-            font-size:2.5em;
-            color:rgba(84,61,94,0.9);
-            font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-            margin:0; padding:0;
-          }
-          a {
-            color:rgba(84,61,94,0.9);
-            text-decoration:none;
-            border-bottom:1px dotted #543D5E;
-          }
-          #text {
-            position:absolute;
-            max-width:300px;
-            top:16px;
-            left:16px;
-            background-color:rgba(255,241,235,0.55);
-            box-shadow:0 0 15px 5px rgba(255,241,235,0.55);
-          }
-          .source {
-            margin-bottom:0.5em;
-            font-size:14px;
-          }
-        </style>
-    </head>
-    <body>
-      <article role="main" id="text">
-        <h1 id="title">boids</h1>
-        <div id="description">
-          <p>
-            This is a lightweight 2D JavaScript implementation of Craig Reynolds'
-            <a href="http://en.wikipedia.org/wiki/Boids">Boids</a> algorithm.
-            It's a classic example of <em>emergence</em>
-            and a suprisingly simple way of mimicking
-            not only flocks, but any form of swarm or herd or crowd.
-          </p>
-          <p>
-            Right now you're watching <strong data-count>many</strong> boids being
-            simulated at <strong data-fps>60</strong> frames per second.
-          </p>
-          <p class="source">
-            <a href="http://github.com/hughsk/boids">Source on GitHub</a>
-          </p>
-        </div>
-      </article>
-      <script type="text/javascript" src="bundle.js"></script>
-    </body>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<title>李迅敏的简介</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="lib/jQuery/jquery-1.11.1.min.js"></script>
+	<script src="lib/navFixed-1.0.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<section id="block-firstPage">
+		<p class="blockTitle">Hello World</p>
+		<div id="fstPage-down"><a href="#block-intro" hideFocus="true"></a></div>
+	</section>
+
+	
+	<section id="block-nav">
+		<header class="container">
+			<a class="fl" href="#block-firstPage" id="logo" hideFocus="true">LXM</a>
+			<nav class="fr">
+				<a href="#block-intro" id="nav-intro" hideFocus="true">个人简介</a>
+				<a href="#block-skill" id="nav-skill" hideFocus="true">专业技能</a>
+				<a href="#block-workEXP" id="nav-workEXP" hideFocus="true">工作经历</a>
+				<a href="#block-prjEXP" id="nav-prjEXP" hideFocus="true">项目经验</a>
+				<a href="#block-wantMore" id="nav-wantMore" hideFocus="true">联系邮箱</a>
+			</nav>
+		</header>
+	</section>
+
+	<section id="block-intro">
+		<div class="container">
+			<div id="intro-icon">
+				<a class="link" href="http://github.com/jasinyip" id="link-github" hideFocus="true">GitHub</a>
+				<a class="link" href="http://cn.linkedin.com/pub/俊星-叶/98/76b/a93/" id="link-linkedin" hideFocus="true">Linkedin</a>
+				<!--<img id="myPhoto" src="img/myPhoto.png">-->
+				<a class="link" href="http://jasinyip.com/" id="link-blog" hideFocus="true">Blog</a>
+				<a class="link" href="mailto:&#x79;&#101;&#106;&#117;&#110;&#x78;&#x69;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;" id="link-email" hideFocus="true">E-mail</a>
+			</div>
+			
+			<div id="intro-text">
+				<ul class="fl">
+					<li><span>姓名</span> | 李迅敏</li>
+					<li><span>手机</span> | 1364****3673</li>
+					<li><span>邮箱</span> | <a href="mailto:&#x79;&#101;&#106;&#117;&#110;&#x78;&#x69;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;" hideFocus="true">&#x79;&#101;&#106;&#117;&#110;&#x78;&#x69;&#110;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;</a>
+					<li><span>所在地</span> | 广东 - 珠海</li>
+					<li><span>GitHub</span> | <a href="https://lxmlxmlxmlxm.github.io/" hideFocus="true">点击进入</a> </li>
+					<li><span>Blog</span> | <a href="#" hideFocus="true">点击进入</a></li>
+				</ul>
+				<div class="fr">
+					<p>我是一个性格幽默、做事认真的人。<br>我喜欢研究所碰到的各种技术，不给自己设边界，有 Geek 精神。<br>我有时间概念，能在约定时间内保证完成任务。</p>
+					<p>	1、	熟悉C#，JAVA等面向对象语言。<br>
+						2、	熟悉VISUAL STUDIO2003、2005，Eclipse，IDEA等工具。<br>
+						3、	熟悉AJAX，JAVASCRIPT等客户脚本，以及HTML5，JQUERY等WEB前端技术<br>
+						4、	熟悉SQlServer，MySQL数据库系统（尤其是SQLServer）以及基于进行的应用程序开发<br>
+						5、	熟悉Spring、SpringMVC、MyBatis等核心框架<br>
+					<br>
+						有良好的编码习惯。<br>
+						有 Linux 基础，对服务器端开发有一定了解，能够配合程序员完成相关工作。<br>
+						熟悉 PHP+MySQL；理解基本的算法分析与数据结构，以及面向对象的设计模式。
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section id="block-skill">
+		<div class="container">
+			<div class="skill-title">
+				<h2>专 业 技 能</h2>
+			</div>
+			<div class="skills">
+				<ul class="skill-lang">
+					<li>语言</li>
+					<li>java</li>
+					<li>C/C#</li>
+					<li>HTML(5)</li>
+					<li>CSS(3)</li>
+					<li>Javascript</li>
+					<li>SQL</li>
+				
+				</ul>
+				<ul class="skill-idea">
+					<li>思想</li>
+					<li>W3C标准</li>
+					<li>语义化</li>
+					<li>面向对象</li>
+					<li>响应式设计</li>
+				</ul>
+				<ul class="skill-frame">
+					<li>框架</li>
+					<li>SSM</li>
+					<li>jQuery</li>
+					<li>Bootstrap</li>
+					<li>Vue</li>
+					
+				</ul>
+				<ul class="skill-tech">
+					<li>技术</li>
+					<li>Git</li>
+					<li>SVN</li>
+					<li>Ajax</li>
+				
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="block-workEXP">
+		<div class="container">
+			<div class="work-title">
+				<h2>工 作 经 历</h2>
+			</div>
+			<div class="workEXP-main">
+				<ul class="timebox">
+					<li class="time0">2017.09 - Now</li>
+					<!--<li class="time1">2014.03 - Now</li>-->
+				</ul>
+				<div class="timeline"></div>
+				<ul class="workbox">
+					<li class="work-intro0">
+						<label class="work-place">暨南大学</label>
+						<label class="work-position">软件工程 专业</label>-
+						<label class="work-do"></label>
+					</li>
+					<!--<li class="work-intro1">
+						<label class="work-place">工学咨询工作室</label>
+						<label class="work-position">前端工程师 兼 PM</label>
+						<label class="work-do">负责网站交互设计、网站前端界面实现；与甲方交涉、与甲方讨论及分析需求、流程、可行性评估等。</label>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="block-prjEXP">
+		<div class="container">
+			<div class="prjEXP-title">
+				<h2>项 目 经 验</h2>
+			</div>
+			<ul class="prjs">
+				<li class="prj" id="prj-helpmechoose">
+					<div class="prj-logo"></div>
+					<h3 class="prj-title">图书管理系统</h3>
+					<p class="prj-intro">对图书的管理和操作</p>
+				</li>
+
+				<li class="prj" id="prj-helpmechoose">
+					<div class="prj-logo"></div>
+					<h3 class="prj-title">图书阅读器</h3>
+					<p class="prj-intro">团队项目，可以给权限指定人群阅读以及评论和点赞</p>
+				</li>
+
+				<li class="prj" id="prj-helpmechoose">
+					<div class="prj-logo"></div>
+					<h3 class="prj-title">图书阅读器</h3>
+					<p class="prj-intro">团队项目，可以给权限指定人群阅读以及评论和点赞</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="block-wantMore">
+		<p>快把我收到碗里吧<br>
+		
+		</p>
+	</section>
+
+	<!-- 百度统计代码 -->
+	<div style="display:none">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8085b1bdc385f6af2b23b10f74eedded' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+</body>
 </html>
